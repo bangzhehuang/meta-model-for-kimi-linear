@@ -185,7 +185,7 @@ The official KDA baseline takes about 20 minutes per run on one A100; candidate 
 
 ## Model weights
 
-The final (step 20,000) model weights are attached to the
+**Not yet uploaded.** The final (step 20,000) model weights will be attached to a
 [GitHub Release](../../releases) as safetensors. They contain model weights
 only: no optimizer state and no RNG state.
 
