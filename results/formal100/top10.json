@@ -1,0 +1,937 @@
+{
+ "ranking_policy": "Frozen stage1 three successful seeds, raw peak_train_accuracy mean descending, candidate hash ascending for ties. Fresh/all10/validation summaries are descriptive and do not reselect.",
+ "std_convention": {
+  "population_std": "sqrt(sum((x-mean)^2)/n), ddof=0",
+  "sample_std": "sqrt(sum((x-mean)^2)/(n-1)), ddof=1"
+ },
+ "terminal_counts": {
+  "completed": 324,
+  "failed": 46
+ },
+ "stage_counts": {
+  "1": {
+   "completed": 254,
+   "failed": 46
+  },
+  "2": {
+   "completed": 70
+  }
+ },
+ "failure_counts": {
+  "candidate_numerical_divergence": 6,
+  "candidate_execution_failure": 40
+ },
+ "eligible_stage1_candidates": 84,
+ "top10": [
+  {
+   "selection_rank": 1,
+   "candidate_id": "f21bc1959261af16be0f4b7f70651c989c33f9cc5511d569464c3b4891daab5b",
+   "candidate_index": 274,
+   "stage1_3": {
+    "n": 3,
+    "mean": 0.9971110026041666,
+    "population_std": 0.0008988737806955779,
+    "sample_std": 0.001100891052935277,
+    "min": 0.9959716796875,
+    "max": 0.9981689453125
+   },
+   "fresh_stage2_7": {
+    "n": 7,
+    "mean": 0.9977678571428571,
+    "population_std": 0.0010248803888752171,
+    "sample_std": 0.0011069973411972824,
+    "min": 0.995849609375,
+    "max": 0.998779296875
+   },
+   "all10": {
+    "n": 10,
+    "mean": 0.99757080078125,
+    "population_std": 0.001033568694372531,
+    "sample_std": 0.0010894770641545514,
+    "min": 0.995849609375,
+    "max": 0.998779296875
+   },
+   "fresh_minus_selection_mean": 0.0006568545386904656,
+   "final_validation_all10": {
+    "n": 10,
+    "mean": 0.9952877044677735,
+    "population_std": 0.0012118627994040568,
+    "sample_std": 0.001277415552581521,
+    "min": 0.99346923828125,
+    "max": 0.9967231750488281
+   },
+   "seed_peaks": [
+    {
+     "seed": 239,
+     "stage": 1,
+     "raw_train_peak": 0.9971923828125
+    },
+    {
+     "seed": 240,
+     "stage": 1,
+     "raw_train_peak": 0.9959716796875
+    },
+    {
+     "seed": 241,
+     "stage": 1,
+     "raw_train_peak": 0.9981689453125
+    },
+    {
+     "seed": 242,
+     "stage": 2,
+     "raw_train_peak": 0.9984130859375
+    },
+    {
+     "seed": 243,
+     "stage": 2,
+     "raw_train_peak": 0.99853515625
+    },
+    {
+     "seed": 244,
+     "stage": 2,
+     "raw_train_peak": 0.998046875
+    },
+    {
+     "seed": 245,
+     "stage": 2,
+     "raw_train_peak": 0.995849609375
+    },
+    {
+     "seed": 246,
+     "stage": 2,
+     "raw_train_peak": 0.998779296875
+    },
+    {
+     "seed": 247,
+     "stage": 2,
+     "raw_train_peak": 0.99658203125
+    },
+    {
+     "seed": 248,
+     "stage": 2,
+     "raw_train_peak": 0.9981689453125
+    }
+   ],
+   "equation": "S_t = S_{t-1} + [(alpha - k + q)*k] q^T;  y_t = S_t q_t / sqrt(d)"
+  },
+  {
+   "selection_rank": 2,
+   "candidate_id": "13d10c0845b359730e06a7e025b1b73f4f38621a488cbc148627b079f9e94ac8",
+   "candidate_index": 41,
+   "stage1_3": {
+    "n": 3,
+    "mean": 0.9965006510416666,
+    "population_std": 0.0014001180447660525,
+    "sample_std": 0.001714787394670042,
+    "min": 0.994873046875,
+    "max": 0.998291015625
+   },
+   "fresh_stage2_7": {
+    "n": 7,
+    "mean": 0.9967041015625,
+    "population_std": 0.0009478012166365229,
+    "sample_std": 0.001023742319776133,
+    "min": 0.9957275390625,
+    "max": 0.99853515625
+   },
+   "all10": {
+    "n": 10,
+    "mean": 0.99664306640625,
+    "population_std": 0.0011070774625986971,
+    "sample_std": 0.001166962109350585,
+    "min": 0.994873046875,
+    "max": 0.99853515625
+   },
+   "fresh_minus_selection_mean": 0.00020345052083337034,
+   "final_validation_all10": {
+    "n": 10,
+    "mean": 0.994051742553711,
+    "population_std": 0.0014247259000737646,
+    "sample_std": 0.001501792961888851,
+    "min": 0.9918365478515625,
+    "max": 0.996246337890625
+   },
+   "seed_peaks": [
+    {
+     "seed": 239,
+     "stage": 1,
+     "raw_train_peak": 0.998291015625
+    },
+    {
+     "seed": 240,
+     "stage": 1,
+     "raw_train_peak": 0.994873046875
+    },
+    {
+     "seed": 241,
+     "stage": 1,
+     "raw_train_peak": 0.996337890625
+    },
+    {
+     "seed": 242,
+     "stage": 2,
+     "raw_train_peak": 0.99853515625
+    },
+    {
+     "seed": 243,
+     "stage": 2,
+     "raw_train_peak": 0.9962158203125
+    },
+    {
+     "seed": 244,
+     "stage": 2,
+     "raw_train_peak": 0.9970703125
+    },
+    {
+     "seed": 245,
+     "stage": 2,
+     "raw_train_peak": 0.9959716796875
+    },
+    {
+     "seed": 246,
+     "stage": 2,
+     "raw_train_peak": 0.9974365234375
+    },
+    {
+     "seed": 247,
+     "stage": 2,
+     "raw_train_peak": 0.9957275390625
+    },
+    {
+     "seed": 248,
+     "stage": 2,
+     "raw_train_peak": 0.9959716796875
+    }
+   ],
+   "equation": "S_t = S_{t-1} + [k + beta*k] q^T;  y_t = S_t q_t / sqrt(d)"
+  },
+  {
+   "selection_rank": 3,
+   "candidate_id": "d9fc05b4358ba28bf2d1ddc92fd7d875d4953f176de1e85ca092e2c01506ea37",
+   "candidate_index": 35,
+   "stage1_3": {
+    "n": 3,
+    "mean": 0.9933675130208334,
+    "population_std": 0.0016598370812476513,
+    "sample_std": 0.002032876952603645,
+    "min": 0.9910888671875,
+    "max": 0.9949951171875
+   },
+   "fresh_stage2_7": {
+    "n": 7,
+    "mean": 0.9941231863839286,
+    "population_std": 0.0024347955381319956,
+    "sample_std": 0.0026298797560456483,
+    "min": 0.990478515625,
+    "max": 0.9974365234375
+   },
+   "all10": {
+    "n": 10,
+    "mean": 0.993896484375,
+    "population_std": 0.0022574758311653966,
+    "sample_std": 0.0023795884630881258,
+    "min": 0.990478515625,
+    "max": 0.9974365234375
+   },
+   "fresh_minus_selection_mean": 0.0007556733630952328,
+   "final_validation_all10": {
+    "n": 10,
+    "mean": 0.9907730102539063,
+    "population_std": 0.002907167146092877,
+    "sample_std": 0.0030644232401549894,
+    "min": 0.9862136840820312,
+    "max": 0.994903564453125
+   },
+   "seed_peaks": [
+    {
+     "seed": 239,
+     "stage": 1,
+     "raw_train_peak": 0.9940185546875
+    },
+    {
+     "seed": 240,
+     "stage": 1,
+     "raw_train_peak": 0.9910888671875
+    },
+    {
+     "seed": 241,
+     "stage": 1,
+     "raw_train_peak": 0.9949951171875
+    },
+    {
+     "seed": 242,
+     "stage": 2,
+     "raw_train_peak": 0.9947509765625
+    },
+    {
+     "seed": 243,
+     "stage": 2,
+     "raw_train_peak": 0.9940185546875
+    },
+    {
+     "seed": 244,
+     "stage": 2,
+     "raw_train_peak": 0.99072265625
+    },
+    {
+     "seed": 245,
+     "stage": 2,
+     "raw_train_peak": 0.9959716796875
+    },
+    {
+     "seed": 246,
+     "stage": 2,
+     "raw_train_peak": 0.9974365234375
+    },
+    {
+     "seed": 247,
+     "stage": 2,
+     "raw_train_peak": 0.990478515625
+    },
+    {
+     "seed": 248,
+     "stage": 2,
+     "raw_train_peak": 0.9954833984375
+    }
+   ],
+   "equation": "S_t = S_{t-1} + [k] q^T + [q] (k*q)^T + [-alpha + q + v] v^T;  y_t = S_t q_t / sqrt(d)"
+  },
+  {
+   "selection_rank": 4,
+   "candidate_id": "555d8fff3d8e29f669068be80a8f5204c0cc94ce7300cc1057933f9e0b6df90b",
+   "candidate_index": 157,
+   "stage1_3": {
+    "n": 3,
+    "mean": 0.9933268229166666,
+    "population_std": 0.0063369530322421,
+    "sample_std": 0.00776115072648789,
+    "min": 0.984375,
+    "max": 0.9981689453125
+   },
+   "fresh_stage2_7": {
+    "n": 7,
+    "mean": 0.6810825892857143,
+    "population_std": 0.42990683794502244,
+    "sample_std": 0.46435245686568993,
+    "min": 0.0013427734375,
+    "max": 0.984375
+   },
+   "all10": {
+    "n": 10,
+    "mean": 0.774755859375,
+    "population_std": 0.38711784576786856,
+    "sample_std": 0.40805803850807965,
+    "min": 0.0013427734375,
+    "max": 0.9981689453125
+   },
+   "fresh_minus_selection_mean": -0.31224423363095233,
+   "final_validation_all10": {
+    "n": 10,
+    "mean": 0.7702445983886719,
+    "population_std": 0.38574489775894605,
+    "sample_std": 0.4066108242356835,
+    "min": 0.0003509521484375,
+    "max": 0.9958000183105469
+   },
+   "seed_peaks": [
+    {
+     "seed": 239,
+     "stage": 1,
+     "raw_train_peak": 0.9974365234375
+    },
+    {
+     "seed": 240,
+     "stage": 1,
+     "raw_train_peak": 0.984375
+    },
+    {
+     "seed": 241,
+     "stage": 1,
+     "raw_train_peak": 0.9981689453125
+    },
+    {
+     "seed": 242,
+     "stage": 2,
+     "raw_train_peak": 0.0013427734375
+    },
+    {
+     "seed": 243,
+     "stage": 2,
+     "raw_train_peak": 0.9063720703125
+    },
+    {
+     "seed": 244,
+     "stage": 2,
+     "raw_train_peak": 0.984375
+    },
+    {
+     "seed": 245,
+     "stage": 2,
+     "raw_train_peak": 0.9727783203125
+    },
+    {
+     "seed": 246,
+     "stage": 2,
+     "raw_train_peak": 0.92626953125
+    },
+    {
+     "seed": 247,
+     "stage": 2,
+     "raw_train_peak": 0.0037841796875
+    },
+    {
+     "seed": 248,
+     "stage": 2,
+     "raw_train_peak": 0.97265625
+    }
+   ],
+   "equation": "S_t = S_{t-1} + [alpha] (beta*v)^T + [q] (alpha + k + q + v)^T;  y_t = S_t q_t / sqrt(d)"
+  },
+  {
+   "selection_rank": 5,
+   "candidate_id": "f399c30bec10dc6c858ab2c17052c72363ea52b78ee85500d005845913155cf4",
+   "candidate_index": 0,
+   "stage1_3": {
+    "n": 3,
+    "mean": 0.9849446614583334,
+    "population_std": 0.001844119334899847,
+    "sample_std": 0.0022585756976526558,
+    "min": 0.9835205078125,
+    "max": 0.987548828125
+   },
+   "fresh_stage2_7": {
+    "n": 7,
+    "mean": 0.9618443080357143,
+    "population_std": 0.022442719755856176,
+    "sample_std": 0.024240907884123204,
+    "min": 0.9278564453125,
+    "max": 0.989990234375
+   },
+   "all10": {
+    "n": 10,
+    "mean": 0.9687744140625,
+    "population_std": 0.02157903451957047,
+    "sample_std": 0.022746299596413333,
+    "min": 0.9278564453125,
+    "max": 0.989990234375
+   },
+   "fresh_minus_selection_mean": -0.02310035342261907,
+   "final_validation_all10": {
+    "n": 10,
+    "mean": 0.9619132995605468,
+    "population_std": 0.023436644086507752,
+    "sample_std": 0.02470439200802694,
+    "min": 0.9170951843261719,
+    "max": 0.9861183166503906
+   },
+   "seed_peaks": [
+    {
+     "seed": 239,
+     "stage": 1,
+     "raw_train_peak": 0.9835205078125
+    },
+    {
+     "seed": 240,
+     "stage": 1,
+     "raw_train_peak": 0.9837646484375
+    },
+    {
+     "seed": 241,
+     "stage": 1,
+     "raw_train_peak": 0.987548828125
+    },
+    {
+     "seed": 242,
+     "stage": 2,
+     "raw_train_peak": 0.9542236328125
+    },
+    {
+     "seed": 243,
+     "stage": 2,
+     "raw_train_peak": 0.9639892578125
+    },
+    {
+     "seed": 244,
+     "stage": 2,
+     "raw_train_peak": 0.9783935546875
+    },
+    {
+     "seed": 245,
+     "stage": 2,
+     "raw_train_peak": 0.9840087890625
+    },
+    {
+     "seed": 246,
+     "stage": 2,
+     "raw_train_peak": 0.9278564453125
+    },
+    {
+     "seed": 247,
+     "stage": 2,
+     "raw_train_peak": 0.989990234375
+    },
+    {
+     "seed": 248,
+     "stage": 2,
+     "raw_train_peak": 0.9344482421875
+    }
+   ],
+   "equation": "S_t = S_{t-1} + [<q, q>*v] q^T;  y_t = S_t q_t / sqrt(d)"
+  },
+  {
+   "selection_rank": 6,
+   "candidate_id": "3a7b904e45f576095a40569bd17c45a7e48c652e00c63c0ee20a583a309137c1",
+   "candidate_index": 7,
+   "stage1_3": {
+    "n": 3,
+    "mean": 0.9767252604166666,
+    "population_std": 0.03069080609314766,
+    "sample_std": 0.037588407361456334,
+    "min": 0.933349609375,
+    "max": 0.999755859375
+   },
+   "fresh_stage2_7": {
+    "n": 7,
+    "mean": 0.9791085379464286,
+    "population_std": 0.027621468737770077,
+    "sample_std": 0.029834596099777823,
+    "min": 0.9178466796875,
+    "max": 0.9998779296875
+   },
+   "all10": {
+    "n": 10,
+    "mean": 0.9783935546875,
+    "population_std": 0.028597768282348467,
+    "sample_std": 0.0301446945899808,
+    "min": 0.9178466796875,
+    "max": 0.9998779296875
+   },
+   "fresh_minus_selection_mean": 0.0023832775297619735,
+   "final_validation_all10": {
+    "n": 10,
+    "mean": 0.9743038177490234,
+    "population_std": 0.031441936615746215,
+    "sample_std": 0.033142711250801475,
+    "min": 0.9074287414550781,
+    "max": 0.9987411499023438
+   },
+   "seed_peaks": [
+    {
+     "seed": 239,
+     "stage": 1,
+     "raw_train_peak": 0.999755859375
+    },
+    {
+     "seed": 240,
+     "stage": 1,
+     "raw_train_peak": 0.9970703125
+    },
+    {
+     "seed": 241,
+     "stage": 1,
+     "raw_train_peak": 0.933349609375
+    },
+    {
+     "seed": 242,
+     "stage": 2,
+     "raw_train_peak": 0.97265625
+    },
+    {
+     "seed": 243,
+     "stage": 2,
+     "raw_train_peak": 0.9989013671875
+    },
+    {
+     "seed": 244,
+     "stage": 2,
+     "raw_train_peak": 0.9178466796875
+    },
+    {
+     "seed": 245,
+     "stage": 2,
+     "raw_train_peak": 0.9998779296875
+    },
+    {
+     "seed": 246,
+     "stage": 2,
+     "raw_train_peak": 0.9951171875
+    },
+    {
+     "seed": 247,
+     "stage": 2,
+     "raw_train_peak": 0.970458984375
+    },
+    {
+     "seed": 248,
+     "stage": 2,
+     "raw_train_peak": 0.9989013671875
+    }
+   ],
+   "equation": "S_t = S_{t-1} + [-beta*k*v] v^T;  y_t = S_t q_t / sqrt(d)"
+  },
+  {
+   "selection_rank": 7,
+   "candidate_id": "ecd11e66fa5f162a032823ad6081a981a831feaee845a23b2870fece1cddcba8",
+   "candidate_index": 3,
+   "stage1_3": {
+    "n": 3,
+    "mean": 0.9741617838541666,
+    "population_std": 0.00751853594998053,
+    "sample_std": 0.009208288345111943,
+    "min": 0.9642333984375,
+    "max": 0.982421875
+   },
+   "fresh_stage2_7": {
+    "n": 7,
+    "mean": 0.9740339006696429,
+    "population_std": 0.017547667536256004,
+    "sample_std": 0.018953647194057444,
+    "min": 0.94384765625,
+    "max": 0.990478515625
+   },
+   "all10": {
+    "n": 10,
+    "mean": 0.974072265625,
+    "population_std": 0.015248160360721928,
+    "sample_std": 0.016072972289125326,
+    "min": 0.94384765625,
+    "max": 0.990478515625
+   },
+   "fresh_minus_selection_mean": -0.00012788318452372494,
+   "final_validation_all10": {
+    "n": 10,
+    "mean": 0.9685272216796875,
+    "population_std": 0.016691408314164657,
+    "sample_std": 0.01759428920954388,
+    "min": 0.9348983764648438,
+    "max": 0.9868011474609375
+   },
+   "seed_peaks": [
+    {
+     "seed": 239,
+     "stage": 1,
+     "raw_train_peak": 0.975830078125
+    },
+    {
+     "seed": 240,
+     "stage": 1,
+     "raw_train_peak": 0.982421875
+    },
+    {
+     "seed": 241,
+     "stage": 1,
+     "raw_train_peak": 0.9642333984375
+    },
+    {
+     "seed": 242,
+     "stage": 2,
+     "raw_train_peak": 0.976318359375
+    },
+    {
+     "seed": 243,
+     "stage": 2,
+     "raw_train_peak": 0.990478515625
+    },
+    {
+     "seed": 244,
+     "stage": 2,
+     "raw_train_peak": 0.986083984375
+    },
+    {
+     "seed": 245,
+     "stage": 2,
+     "raw_train_peak": 0.9844970703125
+    },
+    {
+     "seed": 246,
+     "stage": 2,
+     "raw_train_peak": 0.986572265625
+    },
+    {
+     "seed": 247,
+     "stage": 2,
+     "raw_train_peak": 0.950439453125
+    },
+    {
+     "seed": 248,
+     "stage": 2,
+     "raw_train_peak": 0.94384765625
+    }
+   ],
+   "equation": "S_t = S_{t-1} + [q] k^T + [-k] q^T + [-beta*k] (-<q, q>*beta*k)^T;  y_t = S_t q_t / sqrt(d)"
+  },
+  {
+   "selection_rank": 8,
+   "candidate_id": "ee41718e2ca717c7d3b390c93649418a995ee5d20719918f4a72649437e187ea",
+   "candidate_index": 89,
+   "stage1_3": {
+    "n": 3,
+    "mean": 0.968505859375,
+    "population_std": 0.010424452097496524,
+    "sample_std": 0.012767294243476161,
+    "min": 0.9560546875,
+    "max": 0.9815673828125
+   },
+   "fresh_stage2_7": {
+    "n": 7,
+    "mean": 0.953857421875,
+    "population_std": 0.027388710893300514,
+    "sample_std": 0.029583188893856558,
+    "min": 0.889404296875,
+    "max": 0.9725341796875
+   },
+   "all10": {
+    "n": 10,
+    "mean": 0.958251953125,
+    "population_std": 0.024551189604331884,
+    "sample_std": 0.025879226138778955,
+    "min": 0.889404296875,
+    "max": 0.9815673828125
+   },
+   "fresh_minus_selection_mean": -0.0146484375,
+   "final_validation_all10": {
+    "n": 10,
+    "mean": 0.9516094207763672,
+    "population_std": 0.02655736856614659,
+    "sample_std": 0.027993924443194432,
+    "min": 0.8765640258789062,
+    "max": 0.9768257141113281
+   },
+   "seed_peaks": [
+    {
+     "seed": 239,
+     "stage": 1,
+     "raw_train_peak": 0.9678955078125
+    },
+    {
+     "seed": 240,
+     "stage": 1,
+     "raw_train_peak": 0.9560546875
+    },
+    {
+     "seed": 241,
+     "stage": 1,
+     "raw_train_peak": 0.9815673828125
+    },
+    {
+     "seed": 242,
+     "stage": 2,
+     "raw_train_peak": 0.9666748046875
+    },
+    {
+     "seed": 243,
+     "stage": 2,
+     "raw_train_peak": 0.9659423828125
+    },
+    {
+     "seed": 244,
+     "stage": 2,
+     "raw_train_peak": 0.9468994140625
+    },
+    {
+     "seed": 245,
+     "stage": 2,
+     "raw_train_peak": 0.889404296875
+    },
+    {
+     "seed": 246,
+     "stage": 2,
+     "raw_train_peak": 0.96875
+    },
+    {
+     "seed": 247,
+     "stage": 2,
+     "raw_train_peak": 0.9725341796875
+    },
+    {
+     "seed": 248,
+     "stage": 2,
+     "raw_train_peak": 0.966796875
+    }
+   ],
+   "equation": "S_t = S_{t-1} + [beta*k] q^T + [alpha] v^T + [-q] (beta*k)^T + [v] alpha^T;  y_t = S_t q_t / sqrt(d)"
+  },
+  {
+   "selection_rank": 9,
+   "candidate_id": "cf95f32dd8d4278e85cb2844d258faa0862a038212eeff865ebfef0d378884a8",
+   "candidate_index": 59,
+   "stage1_3": {
+    "n": 3,
+    "mean": 0.9453938802083334,
+    "population_std": 0.059798783998519164,
+    "sample_std": 0.07323825401763977,
+    "min": 0.86083984375,
+    "max": 0.989013671875
+   },
+   "fresh_stage2_7": {
+    "n": 7,
+    "mean": 0.9598737444196429,
+    "population_std": 0.03294035946855544,
+    "sample_std": 0.03557965470467532,
+    "min": 0.9144287109375,
+    "max": 0.9976806640625
+   },
+   "all10": {
+    "n": 10,
+    "mean": 0.95552978515625,
+    "population_std": 0.043316803042747654,
+    "sample_std": 0.0456599195239982,
+    "min": 0.86083984375,
+    "max": 0.9976806640625
+   },
+   "fresh_minus_selection_mean": 0.014479864211309534,
+   "final_validation_all10": {
+    "n": 10,
+    "mean": 0.9493888854980469,
+    "population_std": 0.04655682256672619,
+    "sample_std": 0.04907519997706043,
+    "min": 0.8480720520019531,
+    "max": 0.9957046508789062
+   },
+   "seed_peaks": [
+    {
+     "seed": 239,
+     "stage": 1,
+     "raw_train_peak": 0.986328125
+    },
+    {
+     "seed": 240,
+     "stage": 1,
+     "raw_train_peak": 0.989013671875
+    },
+    {
+     "seed": 241,
+     "stage": 1,
+     "raw_train_peak": 0.86083984375
+    },
+    {
+     "seed": 242,
+     "stage": 2,
+     "raw_train_peak": 0.9730224609375
+    },
+    {
+     "seed": 243,
+     "stage": 2,
+     "raw_train_peak": 0.9901123046875
+    },
+    {
+     "seed": 244,
+     "stage": 2,
+     "raw_train_peak": 0.9884033203125
+    },
+    {
+     "seed": 245,
+     "stage": 2,
+     "raw_train_peak": 0.9144287109375
+    },
+    {
+     "seed": 246,
+     "stage": 2,
+     "raw_train_peak": 0.9359130859375
+    },
+    {
+     "seed": 247,
+     "stage": 2,
+     "raw_train_peak": 0.9976806640625
+    },
+    {
+     "seed": 248,
+     "stage": 2,
+     "raw_train_peak": 0.9195556640625
+    }
+   ],
+   "equation": "S_t = S_{t-1} + [k] (k + (-alpha - k - q - v + beta*q)*beta*q)^T;  y_t = S_t q_t / sqrt(d)"
+  },
+  {
+   "selection_rank": 10,
+   "candidate_id": "4e55a71c737f82f61d99a9dabd56352127e903413f8dd9d447cd21fff530776b",
+   "candidate_index": 335,
+   "stage1_3": {
+    "n": 3,
+    "mean": 0.9440511067708334,
+    "population_std": 0.006722616024760216,
+    "sample_std": 0.008233489498659987,
+    "min": 0.9383544921875,
+    "max": 0.9534912109375
+   },
+   "fresh_stage2_7": {
+    "n": 7,
+    "mean": 0.9448590959821429,
+    "population_std": 0.022277434454557096,
+    "sample_std": 0.024062379354293614,
+    "min": 0.8961181640625,
+    "max": 0.962158203125
+   },
+   "all10": {
+    "n": 10,
+    "mean": 0.94461669921875,
+    "population_std": 0.01900247425357142,
+    "sample_std": 0.020030366606664567,
+    "min": 0.8961181640625,
+    "max": 0.962158203125
+   },
+   "fresh_minus_selection_mean": 0.0008079892113095344,
+   "final_validation_all10": {
+    "n": 10,
+    "mean": 0.9365390777587891,
+    "population_std": 0.020112203431557583,
+    "sample_std": 0.021200123869458787,
+    "min": 0.8861198425292969,
+    "max": 0.9551239013671875
+   },
+   "seed_peaks": [
+    {
+     "seed": 239,
+     "stage": 1,
+     "raw_train_peak": 0.9534912109375
+    },
+    {
+     "seed": 240,
+     "stage": 1,
+     "raw_train_peak": 0.9383544921875
+    },
+    {
+     "seed": 241,
+     "stage": 1,
+     "raw_train_peak": 0.9403076171875
+    },
+    {
+     "seed": 242,
+     "stage": 2,
+     "raw_train_peak": 0.962158203125
+    },
+    {
+     "seed": 243,
+     "stage": 2,
+     "raw_train_peak": 0.9520263671875
+    },
+    {
+     "seed": 244,
+     "stage": 2,
+     "raw_train_peak": 0.954345703125
+    },
+    {
+     "seed": 245,
+     "stage": 2,
+     "raw_train_peak": 0.9300537109375
+    },
+    {
+     "seed": 246,
+     "stage": 2,
+     "raw_train_peak": 0.9591064453125
+    },
+    {
+     "seed": 247,
+     "stage": 2,
+     "raw_train_peak": 0.960205078125
+    },
+    {
+     "seed": 248,
+     "stage": 2,
+     "raw_train_peak": 0.8961181640625
+    }
+   ],
+   "equation": "S_t = S_{t-1} + [k] q^T + [q] k^T;  y_t = S_t q_t / sqrt(d)"
+  }
+ ]
+}

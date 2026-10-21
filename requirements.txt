@@ -1,0 +1,7 @@
+torch==2.7.1
+triton==3.3.1
+numpy
+safetensors
+pytest
+# flash-linear-attention pinned to the publication-era KDA commit:
+fla @ git+https://github.com/fla-org/flash-linear-attention@7ab283715a50ecceec3a4982f275a5a7039d01c6
